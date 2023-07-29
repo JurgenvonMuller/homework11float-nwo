@@ -1,0 +1,35 @@
+.boost-inner {
+  min-width: 430px;
+  width:  100%;
+  padding: 154px 55px 187px 0px;
+}
+
+.boost .container .boost-inner .title {
+  text-align:left;
+  padding-bottom: 25px;
+  padding-left: 20px;
+}
+.boost .boost-cards {
+  display: flex;
+  align-items: baseline;
+  margin: 0px auto;
+  padding-left: 20px;
+}
+.boost .boost-cards .boost-card .card-name {
+font-size: 30px;
+font-weight: 600;
+line-height: 40px;
+margin: 50px 0 34px;
+}
+.boost-cards .boost-card {
+  width: 100%;
+  padding: 50px 31px 0px 0px;
+}
+.boost-cards .boost-card .card-opis {
+  padding-bottom: 25px;
+  max-width: 409px;
+}
+.boost-card a {
+padding-bottom: 0px;
+color: #000;
+}

@@ -1,0 +1,402 @@
+* {
+  box-sizing: border-box;
+}
+@font-face {
+  font-family:"GraphikLCG";
+  font-weight: 400;
+  src: url(../fonts/GraphikLCG-Regular.ttf);
+}
+@font-face {
+  font-family: "GraphikLCG";
+  font-weight: 600;
+  src: url(../fonts/GraphikLCG-Semibold.ttf);
+}
+html {
+  font-family: "GraphikLCG";
+}
+.container {
+  max-width: 1440px;
+  padding: 0px 55px;
+  margin: 0px auto;
+  padding: 0px;
+}
+.btn {
+  display: inline-block;
+  background-color: transparent;
+  border: none;
+  outline: none; 
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all .3s ease;
+  cursor: pointer;
+  padding: 0px;
+}
+.btn.primary.large {
+  height: 60px;
+  padding: 0 42px;
+
+
+}
+.btn.primary.black.large{
+  padding: 0 30px;
+}
+.btn.primary {
+  background-color:#FF6336;
+  border: 1px solid #FF6336;
+  color:#fff;
+  height: 45px;
+  padding: 0 22px;
+}
+.btn.primary:hover {
+  background-color: transparent;
+  color: #FF6336;
+
+}
+.btn.primary.black {
+  background-color: transparent;
+  color: #000;
+  padding: 0 36px;
+  border: 1px solid rgba(0, 0, 0, 0.50);
+}
+.btn.primary.black:hover {
+  background-color: black;
+  color: white;
+  
+}
+
+.header {
+  border-bottom: 1px solid #ccc;
+  padding: 25px 0;
+}
+.header .container {
+  padding: 0px 51px;
+}
+.header .header-inner {
+  display: flex;
+  align-items: center;
+}
+.header .navigation {
+  display: flex;
+  margin-right: auto;
+
+}
+.header .logo {
+  width: 130px;
+  height: 28px;
+  object-fit: contain;
+  margin-right: 50px;
+
+}
+.header .navigation li {
+  margin-right: 50px;
+}
+.header .navigation li:last-child {
+  margin-right: 0px;
+}
+.header .navigation li a {
+color: #000;
+font-size: 15px;
+font-weight: 400;
+line-height: 20px; /* 133.333% */
+text-decoration: none;
+}
+.hero {
+  padding: 130px 0px 172px 0px;
+}
+.hero .hero-inner {
+  position:relative;
+  max-width: 552px;
+  width: 100%;
+}
+.hero .hero-inner::after {
+  content: url(../images/img1.png);
+  display: block;
+  width: 760px;
+  height: 529px;
+  position: absolute;
+  top: 22px;
+  left: calc(100% - 13px);
+  z-index: -1;
+
+}
+.hero .title {
+font-size: 65px;
+font-weight: 600;
+line-height: 70px;
+padding-bottom: 50px;
+}
+.hero .text {
+font-size: 25px;
+font-weight: 400;
+line-height: 35px; 
+min-width: 470px;
+width: 100%;
+margin-bottom: 50px;
+}
+.hero .sub_text {
+color: #000;
+font-size: 25px;
+font-weight: 400;
+line-height: 35px;
+margin-top: 25px;
+}
+.companies {
+  background-color: #FF9C7D;
+  padding: 108px 0 104px 0;
+
+}
+.companies .companies-inner {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+.companies .title {
+text-align: center;
+font-size: 50px;
+font-weight: 600;
+line-height: 60px;
+max-width: 720px;
+width: 100%;
+padding-bottom: 70px;
+
+}
+.companies-pic {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1290px;
+}
+/*Использовано свойство space-between
+которое распределяет расстояние между элементами поровну
+так как у нас расстояние между картинками везде 103 px
+При использовании жесткого паддинга 
+невозможно будет влепить еще одну компанию например 
+Ну и неизвестно что будет с адаптивностью */
+
+/*.img-comp {
+  margin-right: 103px;
+}*/
+.img-comp:last-child {
+  margin-right: 20px;
+}
+.img-comp:first-child{
+  margin-left: 27px;
+}
+.projects {
+  padding: 90px 0 150px 0;
+}
+.projects .projects-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.projects .item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width:100%;
+  padding: 0 20px;
+  margin-bottom: 250px;
+}
+.projects .item:last-child {
+  margin-bottom: 0;
+}
+.projects .item:nth-child(even) .image {
+  background-color: red;
+  order: 1;
+}
+.projects .item:nth-child(even) .block {
+  order: 2;
+  margin-right: 0;
+}
+.projects .item:last-child .image {
+ height: 577px;
+}
+.projects .item .block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 493px;
+  width:100%;
+  padding: 5px 0;
+  
+}
+.projects .item .image {
+  max-width: 632px;
+  height: 632px;
+  margin-right: 20px;
+}
+.projects .item .title,
+.localize .localize-inner .title,
+.boost .boost-inner .title {
+font-size: 50px;
+font-weight: 600;
+line-height: 60px;
+padding-bottom: 30px;
+}
+.projects .item .text,
+.boost-cards .card-opis, 
+.boost-card a {
+font-size: 20px;
+font-weight: 400;
+line-height: 30px;
+padding-bottom: 30px;
+/*text-decoration-line: underline;*/
+}
+.projects .item .link {
+color: #000;
+font-size: 20px;
+font-weight: 600;
+line-height: 30px;
+text-decoration: none;
+transition: color 0.3s ease;
+}
+.projects .item .link:hover {
+  color: #FF9C7D;
+}
+.localize {
+  background-color: #FFF8E4;
+}
+.localize-inner {
+  padding: 120px 0 93px 0;
+  margin:0 20px 0 20px;
+}
+.localize .cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1290px;
+  margin: 0px auto;
+  
+}
+.localize .cards .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 330px;
+  width: 100%;
+  margin-bottom: 57px;
+  padding: 21px 24px 0px 24px;
+}
+.localize .container .localize-inner .title {
+  margin-bottom: 58px;
+  text-align: center;
+  padding-bottom: 0px;
+}
+
+/*Можно бы было объединить стили 
+(так как это сделано выше.localize .container .localize-inner .title) 
+с предыдущими надписями хотя бы частично
+но считаю целесообразным сделать свой стиль для карточек
+что бы не путать со всем сайтом в случае изменения именно 
+этого блока */
+.localize .card-name {
+  display: block;
+  color: #000;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 35px;
+  margin: 24px 0px 23px;
+}
+.localize .card-opis {
+color: #000;
+text-align: center;
+font-size: 18px;
+font-weight: 400;
+line-height: 25px;
+}
+
+/*Секция REVOLUT*/
+.revolut {
+  background-color: #C9E8F2;
+}
+.revolut .revolut-inner {
+  display:flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 53px 0px 105px 0px;
+  
+}
+.citat {
+  max-width: 940px;
+  margin: 0px 60px 0px 20px;
+}
+.revolut-inner .citat p {
+margin: 10px 60px 23px 0;
+font-size: 30px;
+font-weight: 400;
+line-height: 40px; 
+}
+.revolut-inner .citat p:nth-child(2) {
+font-family: Roboto;
+font-size: 15px;
+font-weight: 400;
+line-height: 25px;
+margin-bottom: 7px;
+}
+/*Стилизация секции Cake*/
+.cake {
+  background-color: #DABC98;
+}
+.cake-inner {
+  display: inline-flex;
+  padding: 70px 20px 80px 20px;
+  margin: 0px auto;
+
+}
+.cake-opis {
+  display: block;
+  position: relative;
+  align-items: center;
+  max-width: 809px;
+  padding: 47px 125px 31px 240px;
+  max-width: 809px;
+  border-right: 2px solid black;
+}
+.cake-opis .cake-img {
+  display:block;
+  position: absolute;
+  top: 15px;
+  left: -20px;
+}
+.cake-opis p {
+  position: relative;
+  width: 461px;
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 50px;
+}
+.cake-capterra{
+display: flex;
+flex-wrap: wrap;
+max-width: 481px;
+
+}
+.stars {
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  padding-left: 71px;
+
+}
+.cake-capterra p {
+font-size: 15px;
+font-weight: 400;
+line-height: 25px; 
+letter-spacing: 0.75px;
+}
+/*Integrate Lokalise with your work tools*/
+.integra {
+  background-color: #FFFFFF;
+}
+.integra-inner {
+  padding: 0px 0px 162px 0px;
+  margin:0 auto;
+
+}
+
+
+
+

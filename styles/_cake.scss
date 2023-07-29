@@ -1,0 +1,84 @@
+/*Стилизация секции Cake
+.cake {
+  background-color: #DABC98;
+}
+.cake-inner {
+  display: inline-flex;
+  padding: 70px 20px 80px 20px;
+  margin: 0px auto;
+}
+.cake-opis {
+  display: block;
+  position: relative;
+  align-items: center;
+  max-width: 809px;
+  padding: 47px 125px 31px 240px;
+  max-width: 809px;
+  border-right: 2px solid black;
+}
+.cake-opis .cake-img {
+  display:block;
+  position: absolute;
+  top: 15px;
+  left: -20px;
+}
+.cake-opis p {
+  position: relative;
+  width: 461px;
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 50px;
+}
+.cake-capterra{
+display: flex;
+flex-wrap: wrap;
+max-width: 481px;
+}
+.stars {
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  padding-left: 71px;
+
+}
+.cake-capterra p {
+font-size: 15px;
+font-weight: 400;
+line-height: 25px; 
+letter-spacing: 0.75px;
+}
+*/
+ .cake {
+  background-color: #DABC98;
+  padding: 0px 0;
+  
+  
+  .cake-inner {
+    display: flex;
+    
+    .cake-opis {
+      display: flex;
+      align-items: center;
+      max-width: 810px;
+      width: 100%;
+      border-right: 1 px solid black;
+    }
+
+  }
+  .cake-capterra {
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+
+    .stars {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-right: 70px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
