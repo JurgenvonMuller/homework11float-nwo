@@ -1,21 +1,23 @@
-@import 'reset';
+@import "./defaults/reset"
 // Check containers paddings!
-@import 'body';
+@import "./base/stylefont";
 
-@import 'stylefont';
-@import 'btn';
-@import 'header';
-@import 'hero';
-@import 'companies';
-@import 'projects';
-@import 'localize';
-@import 'boost';
-@import 'revolut';
-@import 'cake';
-@import 'integra';
-@import 'easy';
-@import 'case';
-@import 'footer';
+@import "./base/body";
+
+@import "./elements/btn";
+
+@import "./sections/header";
+@import "./sections/hero";
+@import "./sections/companies";
+@import "./sections/projects";
+@import "./sections/localize";
+@import "./sections/boost";
+@import './sections/revolut";
+@import "./sections/cake";
+@import "./sections/integra";
+@import "./sections/easy";
+@import "./sections/case";
+@import "./sections/footer";
 
 
 
