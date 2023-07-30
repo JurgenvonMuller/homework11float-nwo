@@ -58,16 +58,6 @@ table {
   border-spacing: 0;
 }
 
-* {
-  box-sizing: border-box;
-}
-
-.container {
-  max-width: 1440px;
-  padding: 0px 55px;
-  margin: 0px auto;
-}
-
 @font-face {
   font-family: "GraphikLCG";
   font-weight: 400;
@@ -80,6 +70,16 @@ table {
 }
 html {
   font-family: "GraphikLCG";
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1440px;
+  padding: 0px 55px;
+  margin: 0px auto;
 }
 
 .btn {
@@ -257,7 +257,6 @@ html {
   flex-direction: column;
   align-items: flex-start;
 }
-
 .projects .container .projects-inner .item {
   display: flex;
   align-items: center;
@@ -266,58 +265,31 @@ html {
   padding: 0 20px;
   margin-bottom: 250px;
 }
-
-.projects .container .projects-inner .item:last-child {
-  margin-bottom: 0;
-}
-
-.projects .container .projects-inner .item:nth-child(even) .image {
-  order: 1;
-}
-
-.projects .item:nth-child(even) .block {
-  order: 2;
-  margin-right: 0;
-}
-
-.projects .item:last-child .image {
-  height: 577px;
-}
-
-.projects .item .block {
+.projects .container .projects-inner .item .block {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   max-width: 493px;
   padding: 5px 0;
 }
-
-.projects .item .image {
-  max-width: 632px;
-  height: 632px;
-  margin-right: 20px;
-}
-
-.projects .item .title,
-.localize .localize-inner .title,
-.boost .boost-inner .title {
+.projects .container .projects-inner .item .title {
   font-size: 50px;
   font-weight: 600;
   line-height: 60px;
   padding-bottom: 30px;
 }
-
-.projects .item .text,
-.boost-cards .card-opis,
-.boost-card a {
+.projects .container .projects-inner .item .image {
+  max-width: 632px;
+  height: 632px;
+  margin-right: 20px;
+}
+.projects .container .projects-inner .item .text {
   font-size: 20px;
   font-weight: 400;
   line-height: 30px;
   padding-bottom: 30px;
-  /*text-decoration-line: underline;*/
 }
-
-.projects .item .link {
+.projects .container .projects-inner .item .link {
   color: #000;
   font-size: 20px;
   font-weight: 600;
@@ -325,9 +297,21 @@ html {
   text-decoration: none;
   transition: color 0.3s ease;
 }
-
-.projects .item .link:hover {
+.projects .container .projects-inner .item .link:hover {
   color: #FF9C7D;
+}
+.projects .container .projects-inner .item:last-child {
+  margin-bottom: 0;
+}
+.projects .container .projects-inner .item:nth-child(even) .image {
+  order: 1;
+}
+.projects .container .projects-inner .item:nth-child(even) .block {
+  order: 2;
+  margin-right: 0;
+}
+.projects .container .projects-inner .item:last-child .image {
+  height: 577px;
 }
 
 .localize {
@@ -361,6 +345,10 @@ html {
   margin-bottom: 58px;
   text-align: center;
   padding-bottom: 0px;
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 60px;
+  padding-bottom: 30px;
 }
 
 /*Можно бы было объединить стили 
@@ -397,6 +385,10 @@ html {
   text-align: left;
   padding-bottom: 25px;
   padding-left: 20px;
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 60px;
+  padding-bottom: 30px;
 }
 
 .boost .boost-cards {
@@ -421,11 +413,19 @@ html {
 .boost-cards .boost-card .card-opis {
   padding-bottom: 25px;
   max-width: 409px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  padding-bottom: 30px;
 }
 
 .boost-card a {
   padding-bottom: 0px;
   color: #000;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  padding-bottom: 30px;
 }
 
 /*Секция REVOLUT*/

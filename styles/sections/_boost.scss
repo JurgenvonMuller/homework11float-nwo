@@ -3,11 +3,14 @@
   width:  100%;
   padding: 154px 55px 187px 0px;
 }
-
 .boost .container .boost-inner .title {
   text-align:left;
   padding-bottom: 25px;
   padding-left: 20px;
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 60px;
+  padding-bottom: 30px;
 }
 .boost .boost-cards {
   display: flex;
@@ -28,8 +31,16 @@ margin: 50px 0 34px;
 .boost-cards .boost-card .card-opis {
   padding-bottom: 25px;
   max-width: 409px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  padding-bottom: 30px; 
 }
 .boost-card a {
 padding-bottom: 0px;
 color: #000;
+font-size: 20px;
+font-weight: 400;
+line-height: 30px;
+padding-bottom: 30px;
 }

@@ -5,68 +5,65 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-}
-.projects .container .projects-inner .item {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width:100%;
-  padding: 0 20px;
-  margin-bottom: 250px;
-}
-.projects .container .projects-inner .item:last-child {
+
+  .item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width:100%;
+    padding: 0 20px;
+    margin-bottom: 250px;
+
+    .block {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      max-width: 493px;
+      // width:100%;
+      padding: 5px 0;
+    }
+    .title {
+      font-size: 50px;
+      font-weight: 600;
+      line-height: 60px;
+      padding-bottom: 30px;
+    }
+    .image {
+      max-width: 632px;
+      height: 632px;
+      margin-right: 20px;
+    }
+    .text, {
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 30px;
+      padding-bottom: 30px;
+    }
+    .link {
+      color: #000;
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 30px;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    .link:hover {
+      color: #FF9C7D;
+    }
+
+  }
+  .item:last-child {
   margin-bottom: 0;
-}
-.projects .container .projects-inner .item:nth-child(even) .image {
-  // background-color: red;
-  order: 1;
-}
-.projects .item:nth-child(even) .block {
+  }
+  .item:nth-child(even) .image {
+    // background-color: red;
+    order: 1;
+  }
+  .item:nth-child(even) .block {
   order: 2;
   margin-right: 0;
-}
-.projects .item:last-child .image {
-height: 577px;
-}
-.projects .item .block {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  max-width: 493px;
-  // width:100%;
-  padding: 5px 0;
-  
-}
-.projects .item .image {
-  max-width: 632px;
-  height: 632px;
-  margin-right: 20px;
-}
-.projects .item .title,
-.localize .localize-inner .title,
-.boost .boost-inner .title {
-font-size: 50px;
-font-weight: 600;
-line-height: 60px;
-padding-bottom: 30px;
-}
-.projects .item .text,
-.boost-cards .card-opis, 
-.boost-card a {
-font-size: 20px;
-font-weight: 400;
-line-height: 30px;
-padding-bottom: 30px;
-/*text-decoration-line: underline;*/
-}
-.projects .item .link {
-color: #000;
-font-size: 20px;
-font-weight: 600;
-line-height: 30px;
-text-decoration: none;
-transition: color 0.3s ease;
-}
-.projects .item .link:hover {
-  color: #FF9C7D;
+  }
+  .item:last-child .image {
+  height: 577px;
+  }
 }
