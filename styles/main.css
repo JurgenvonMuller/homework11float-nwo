@@ -60,18 +60,14 @@ table {
 
 @font-face {
   font-family: "GraphikLCG";
-  font-weight: 400;
   src: url(../fonts/GraphikLCG-Regular.ttf);
+  font-weight: 400;
 }
 @font-face {
   font-family: "GraphikLCG";
-  font-weight: 600;
   src: url(../fonts/GraphikLCG-Semibold.ttf);
+  font-weight: 600;
 }
-html {
-  font-family: "GraphikLCG";
-}
-
 * {
   box-sizing: border-box;
 }
@@ -136,36 +132,35 @@ html {
 .header .container {
   padding: 0px 51px;
 }
-.header .header-inner {
+.header .container .header-inner {
   display: flex;
   align-items: center;
 }
-.header .logo {
+.header .container .header-inner .logo {
   width: 130px;
   height: 28px;
   -o-object-fit: contain;
      object-fit: contain;
   margin-right: 50px;
 }
-.header .navigation {
+.header .container .header-inner .navigation {
   display: flex;
   margin-right: auto;
   min-width: 592px;
 }
-.header .navigation li {
+.header .container .header-inner .navigation li {
   margin-right: 50px;
 }
-.header .navigation li:last-child {
+.header .container .header-inner .navigation li:last-child {
   margin-right: 0px;
 }
-.header .navigation li a {
+.header .container .header-inner .navigation li a {
   color: #000;
   font-size: 15px;
   font-weight: 400;
   line-height: 20px;
   text-decoration: none;
 }
-
 
 .hero {
   padding: 90px 0px 210px 0px;
@@ -209,16 +204,14 @@ html {
 
 .companies {
   background-color: #FF9C7D;
-  padding: 108px 0 104px 0;
 }
-
-.companies .companies-inner {
+.companies .container .companies-inner {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 108px 0 104px 0;
 }
-
-.companies .title {
+.companies .container .companies-inner .title {
   text-align: center;
   font-size: 50px;
   font-weight: 600;
@@ -226,32 +219,22 @@ html {
   max-width: 720px;
   margin-bottom: 70px;
 }
-
-.companies-pic {
+.companies .container .companies-inner .companies-pic {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 1290px;
 }
-
-/*Использовано свойство space-between
-которое распределяет расстояние между элементами поровну
-так как у нас расстояние между картинками везде 103 px
-При использовании жесткого паддинга 
-невозможно будет влепить еще одну компанию например 
-Ну и неизвестно что будет с адаптивностью */
-.img-comp:last-child {
+.companies .container .companies-inner .companies-pic .img-comp:last-child {
   margin-right: 20px;
 }
-
-.img-comp:first-child {
+.companies .container .companies-inner .companies-pic .img-comp:first-child {
   margin-left: 28px;
 }
 
 .projects {
   padding: 90px 0 150px 0;
 }
-
 .projects .container .projects-inner {
   display: flex;
   flex-direction: column;
@@ -265,6 +248,19 @@ html {
   padding: 0 20px;
   margin-bottom: 250px;
 }
+.projects .container .projects-inner .item .item:last-child {
+  margin-bottom: 0;
+}
+.projects .container .projects-inner .item .item:nth-child(even) .image {
+  order: 1;
+}
+.projects .container .projects-inner .item .item:nth-child(even) .block {
+  order: 2;
+  margin-right: 0;
+}
+.projects .container .projects-inner .item .item:last-child .image {
+  height: 577px;
+}
 .projects .container .projects-inner .item .block {
   display: flex;
   flex-direction: column;
@@ -272,24 +268,19 @@ html {
   max-width: 493px;
   padding: 5px 0;
 }
-.projects .container .projects-inner .item .title {
+.projects .container .projects-inner .item .block .title {
   font-size: 50px;
   font-weight: 600;
   line-height: 60px;
   padding-bottom: 30px;
 }
-.projects .container .projects-inner .item .image {
-  max-width: 632px;
-  height: 632px;
-  margin-right: 20px;
-}
-.projects .container .projects-inner .item .text {
+.projects .container .projects-inner .item .block .text {
   font-size: 20px;
   font-weight: 400;
   line-height: 30px;
   padding-bottom: 30px;
 }
-.projects .container .projects-inner .item .link {
+.projects .container .projects-inner .item .block .link {
   color: #000;
   font-size: 20px;
   font-weight: 600;
@@ -297,33 +288,30 @@ html {
   text-decoration: none;
   transition: color 0.3s ease;
 }
-.projects .container .projects-inner .item .link:hover {
+.projects .container .projects-inner .item .block .link:hover {
   color: #FF9C7D;
 }
-.projects .container .projects-inner .item:last-child {
-  margin-bottom: 0;
-}
-.projects .container .projects-inner .item:nth-child(even) .image {
-  order: 1;
-}
-.projects .container .projects-inner .item:nth-child(even) .block {
-  order: 2;
-  margin-right: 0;
-}
-.projects .container .projects-inner .item:last-child .image {
-  height: 577px;
+.projects .container .projects-inner .item .image {
+  max-width: 632px;
+  height: 632px;
+  margin-right: 20px;
 }
 
 .localize {
   background-color: #FFF8E4;
 }
-
-.localize-inner {
+.localize .container .localize-inner {
   padding: 120px 0 93px 0;
   margin: 0 20px 0 20px;
 }
-
-.localize .cards {
+.localize .container .localize-inner .title {
+  margin-bottom: 58px;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 60px;
+}
+.localize .container .localize-inner .cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -331,8 +319,7 @@ html {
   margin: 0px auto;
   padding: 0 40px 0;
 }
-
-.localize .cards .card {
+.localize .container .localize-inner .cards .card {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -341,22 +328,7 @@ html {
   margin-bottom: 57px;
   padding-top: 21px;
 }
-
-.localize .container .localize-inner .title {
-  margin-bottom: 58px;
-  text-align: center;
-  font-size: 50px;
-  font-weight: 600;
-  line-height: 60px;
-}
-
-/*Можно бы было объединить стили 
-(так как это сделано выше.localize .container .localize-inner .title) 
-с предыдущими надписями хотя бы частично
-но считаю целесообразным сделать свой стиль для карточек
-что бы не путать со всем сайтом в случае изменения именно 
-этого блока */
-.localize .card-name {
+.localize .container .localize-inner .cards .card .localize .card-name {
   display: block;
   color: #000;
   text-align: center;
@@ -365,8 +337,7 @@ html {
   line-height: 35px;
   margin: 26px 0px 20px;
 }
-
-.localize .card-opis {
+.localize .container .localize-inner .cards .card .localize .card-opis {
   color: #000;
   text-align: center;
   font-size: 18px;
@@ -374,10 +345,12 @@ html {
   line-height: 25px;
 }
 
-.boost-inner {
+.boost {
+  background-color: #FFFFFF;
+}
+.boost .container .boost-inner {
   padding: 154px 20px 180px 20px;
 }
-
 .boost .container .boost-inner .title {
   text-align: left;
   padding-bottom: 25px;
@@ -386,37 +359,32 @@ html {
   line-height: 60px;
   padding-bottom: 30px;
 }
-
-.boost .boost-cards {
+.boost .container .boost-inner .boost-cards {
   display: flex;
   align-items: baseline;
   margin: 0px auto;
 }
-
-.boost-cards .boost-card {
+.boost .container .boost-inner .boost-cards .boost-card {
   max-width: 400px;
   width: 100%;
   margin-right: 30px;
 }
-.boost-cards .boost-card .img-place {
+.boost .container .boost-inner .boost-cards .boost-card .img-place {
   padding: 50px 0 50px;
 }
-
-.boost .boost-cards .boost-card .card-name {
+.boost .container .boost-inner .boost-cards .boost-card .card-name {
   font-size: 30px;
   font-weight: 600;
   line-height: 40px;
   margin: 0px 0 34px;
 }
-
-.boost-cards .boost-card .card-opis {
+.boost .container .boost-inner .boost-cards .boost-card .card-opis {
   margin-bottom: 25px;
   font-size: 20px;
   font-weight: 400;
   line-height: 30px;
 }
-
-.boost-card a {
+.boost .container .boost-inner .boost-cards .boost-card .boost-card a {
   padding-bottom: 0px;
   color: #000;
   font-size: 20px;
