@@ -375,15 +375,12 @@ html {
 }
 
 .boost-inner {
-  min-width: 430px;
-  width: 100%;
-  padding: 154px 55px 187px 0px;
+  padding: 154px 20px 180px 20px;
 }
 
 .boost .container .boost-inner .title {
   text-align: left;
   padding-bottom: 25px;
-  padding-left: 20px;
   font-size: 50px;
   font-weight: 600;
   line-height: 60px;
@@ -394,28 +391,29 @@ html {
   display: flex;
   align-items: baseline;
   margin: 0px auto;
-  padding-left: 20px;
+}
+
+.boost-cards .boost-card {
+  max-width: 400px;
+  width: 100%;
+  margin-right: 30px;
+}
+.boost-cards .boost-card .img-place {
+  padding: 50px 0 50px;
 }
 
 .boost .boost-cards .boost-card .card-name {
   font-size: 30px;
   font-weight: 600;
   line-height: 40px;
-  margin: 50px 0 34px;
-}
-
-.boost-cards .boost-card {
-  width: 100%;
-  padding: 50px 31px 0px 0px;
+  margin: 0px 0 34px;
 }
 
 .boost-cards .boost-card .card-opis {
-  padding-bottom: 25px;
-  max-width: 409px;
+  margin-bottom: 25px;
   font-size: 20px;
   font-weight: 400;
   line-height: 30px;
-  padding-bottom: 30px;
 }
 
 .boost-card a {
@@ -436,16 +434,16 @@ html {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-  padding: 53px 0px 105px 0px;
+  padding: 53px 20px 105px 20px;
 }
 
 .citat {
   max-width: 940px;
-  margin: 0px 60px 0px 20px;
+  margin-right: 60px;
 }
 
 .revolut-inner .citat p {
-  margin: 10px 60px 23px 0;
+  margin: 20px 0px 23px 0px;
   font-size: 30px;
   font-weight: 400;
   line-height: 40px;
@@ -456,7 +454,7 @@ html {
   font-size: 15px;
   font-weight: 400;
   line-height: 25px;
-  margin-bottom: 7px;
+  margin: 0px 0px 7px;
 }
 
 .cake {
