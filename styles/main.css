@@ -553,7 +553,7 @@ html {
 .case .container .case-inner {
   display: flex;
   margin: 0 auto;
-  padding: 92px 75px 94px;
+  padding: 92px 0px 94px 20px;
 }
 .case .container .case-inner .studies {
   display: flex;
@@ -594,6 +594,7 @@ html {
 }
 .case .container .case-inner .list {
   justify-content: space-around;
+  max-width: 218px;
 }
 .case .container .case-inner .list p {
   font-size: 20px;
@@ -611,12 +612,10 @@ html {
   line-height: 15px;
   margin-bottom: 15px;
 }
-
-.list.lm {
+.case .container .case-inner .list.lm {
   margin-left: 70px;
 }
-
-.list.rm {
+.case .container .case-inner .list.rm {
   margin-right: 0px;
 }
 

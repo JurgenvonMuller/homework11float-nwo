@@ -4,7 +4,7 @@
       .case-inner {
         display: flex;
         margin: 0 auto;
-        padding: 92px 75px 94px;
+        padding: 92px 0px 94px 20px;
         .studies {
           display: flex;
           flex-direction: column;
@@ -42,10 +42,9 @@
             text-decoration: none;
           }
         }
-      
         .list {
           justify-content: space-around;
-          
+          max-width: 218px;
           p {
             font-size: 20px;
             font-weight: 600;
@@ -56,7 +55,6 @@
             min-width: 188px;
             margin-right: 34px;
           } 
-          
           li {
           font-size: 15px;
           font-weight: 400;
@@ -64,12 +62,12 @@
           margin-bottom: 15px;
           }
         }
+        .list.lm {
+          margin-left:70px;
+        } 
+        .list.rm {
+          margin-right: 0px;
+        }
       }
     }
-}
-.list.lm {
-  margin-left:70px;
-} 
-.list.rm {
-  margin-right: 0px;
 }
