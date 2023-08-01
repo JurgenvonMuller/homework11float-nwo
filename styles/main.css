@@ -253,19 +253,6 @@ table {
   padding: 0 20px;
   margin-bottom: 250px;
 }
-.projects .container .projects-inner .item .item:last-child {
-  margin-bottom: 0;
-}
-.projects .container .projects-inner .item .item:nth-child(even) .image {
-  order: 1;
-}
-.projects .container .projects-inner .item .item:nth-child(even) .block {
-  order: 2;
-  margin-right: 0;
-}
-.projects .container .projects-inner .item .item:last-child .image {
-  height: 577px;
-}
 .projects .container .projects-inner .item .block {
   display: flex;
   flex-direction: column;
@@ -303,6 +290,19 @@ table {
   max-width: 632px;
   height: 632px;
   margin-right: 20px;
+}
+.projects .container .projects-inner .item:last-child {
+  margin-bottom: 0;
+}
+.projects .container .projects-inner .item:nth-child(even) .image {
+  order: 1;
+}
+.projects .container .projects-inner .item:nth-child(even) .block {
+  order: 2;
+  margin-right: 0;
+}
+.projects .container .projects-inner .item:last-child .image {
+  height: 577px;
 }
 
 .localize {

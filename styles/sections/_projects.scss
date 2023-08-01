@@ -12,19 +12,6 @@
         width:100%;
         padding: 0 20px;
         margin-bottom: 250px;
-      .item:last-child {
-        margin-bottom: 0;
-      }
-      .item:nth-child(even) .image {
-        order: 1;
-      }
-      .item:nth-child(even) .block {
-        order: 2;
-        margin-right: 0;
-      }
-      .item:last-child .image {
-        height: 577px;
-      }
         .block {
           display: flex;
           flex-direction: column;
@@ -62,6 +49,19 @@
           max-width: 632px;
           height: 632px;
           margin-right: 20px;
+        }
+        &:last-child {
+          margin-bottom: 0;
+        } 
+        &:nth-child(even) .image {
+          order: 1;
+        }
+        &:nth-child(even) .block {
+          order: 2;
+          margin-right: 0;
+        }
+        &:last-child .image {
+          height: 577px;
         }
       }  
     }
