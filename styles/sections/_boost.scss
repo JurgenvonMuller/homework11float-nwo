@@ -4,8 +4,8 @@
     .boost-inner {
       padding: 154px 20px 180px 20px;
       .title {
+        font-family: GraphikLCG;
         text-align:left;
-        padding-bottom: 25px;
         font-size: 50px;
         font-weight: 600;
         line-height: 60px;
@@ -23,19 +23,21 @@
             padding: 50px 0 50px;
           }
           .card-name {
+            font-family: GraphikLCG;
             font-size: 30px;
             font-weight: 600;
             line-height: 40px;
             margin: 0px 0 34px;
           }
           .card-opis {
+            font-family: GraphikLCG;
             margin-bottom: 25px;
-            // max-width: 409px;
             font-size: 20px;
             font-weight: 400;
             line-height: 30px;
           }
           .boost-card a {
+            font-family: GraphikLCG;
             padding-bottom: 0px;
             color: #000;
             font-size: 20px;
